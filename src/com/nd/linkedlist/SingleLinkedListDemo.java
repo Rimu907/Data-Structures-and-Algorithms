@@ -34,6 +34,19 @@ public class SingleLinkedListDemo {
         singleLinkedList.deleteNode(heroNode);
         singleLinkedList.list();
 
+        //求有效个数
+        int length = singleLinkedList.getLength(singleLinkedList.getHead());
+        System.out.println("有效的个数是: " + length);
+
+        //获取倒数第k个
+        int index = 1;
+        HeroNode lastIndexNode = singleLinkedList.getLastIndexNode(singleLinkedList.getHead(), index);
+        System.out.printf("倒数第%d个节点是%s",index, lastIndexNode);
+
+        System.out.println();
+        System.out.println("链表反转");
+        singleLinkedList.reverseList(singleLinkedList.getHead());
+        singleLinkedList.list();
 
     }
 }
@@ -41,6 +54,10 @@ public class SingleLinkedListDemo {
 class SingleLinkedList{
     //先初始化头节点, 不要动, 不存数据
     private HeroNode head = new HeroNode(0,"","");
+
+    public HeroNode getHead() {
+        return head;
+    }
 
     //添加节点到单向链表
     //找到当前链表的最后节点
@@ -137,6 +154,64 @@ class SingleLinkedList{
         } else {
             System.out.printf("未找到要删除的: %d \n",node.no);
         }
+
+    }
+
+    //获取单链表的有效节点的个数，带头就去头
+    public int getLength(HeroNode head) {
+        if (head.next == null){
+            return 0;
+        }
+        int length = 0;
+        HeroNode cur = head.next;
+        while(cur!=null){
+            length++;
+            cur = cur.next;
+        }
+        return length;
+    }
+
+    //查找单链表中的倒数第k个节点
+    //1. 便携一个方法接受head， 同时接受一个index
+    //2. index表倒数第几个节点
+    //3. 先从头到尾遍历整个链表，得到总长度
+    //4. 得到size后，遍历size - index个就行
+    public HeroNode getLastIndexNode(HeroNode head, int index){
+        if (head.next == null){
+            System.out.println("链表为空");
+            return null;
+        }
+        //获取链表个数
+        int size = getLength(head);
+
+        //获取节点
+        if (index <= 0 || index > size){
+            return null;
+        }
+        HeroNode cur = head.next;
+        for (int i = 0; i < size - index ; i++) {
+            cur = cur.next;
+        }
+        return cur;
+    }
+
+    //反转单链表
+    public void reverseList(HeroNode head){
+        if (head.next == null || head.next.next == null){
+            return;
+        }
+        //定义辅助
+        HeroNode cur = head.next;
+        HeroNode next = null; //指向当前节点的下一个节点
+        HeroNode reversedHead = new HeroNode(0, "","");
+        //从头到尾遍历原链表。每遍历一个就去出，并放在reverseHead的最前端
+        while(cur != null){
+            next = cur.next; //先保存当前节点的下一个节点，后面需要使用
+            cur.next = reversedHead.next; //将cur的下一个节点指向新链表的最前端
+            reversedHead.next = cur; //将cur连到新的链表上
+            cur = next; //cur后移
+        }
+        head.next = reversedHead.next;
 
     }
     //显示链表
