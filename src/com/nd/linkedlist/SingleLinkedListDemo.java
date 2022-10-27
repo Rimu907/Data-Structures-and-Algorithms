@@ -1,5 +1,7 @@
 package com.nd.linkedlist;
 
+import java.util.Stack;
+
 /**
  * (业务实现)
  *  单链表
@@ -47,6 +49,23 @@ public class SingleLinkedListDemo {
         System.out.println("链表反转");
         singleLinkedList.reverseList(singleLinkedList.getHead());
         singleLinkedList.list();
+
+        System.out.println("逆序打印");
+        singleLinkedList.reversePrint(singleLinkedList.getHead());
+
+        //合并链表
+        System.out.println("合并链表");
+        SingleLinkedList list1 = new SingleLinkedList();
+        list1.add(new HeroNode(1,"a","a"));
+        list1.add(new HeroNode(3, "b","b"));
+        list1.add(new HeroNode(7, "c","c"));
+        SingleLinkedList list2 = new SingleLinkedList();
+        list2.add(new HeroNode(2,"d","d"));
+        list2.add(new HeroNode(4, "e","e"));
+        list2.add(new HeroNode(6, "f","f"));
+
+        HeroNode node = SingleLinkedList.combineList(list1.getHead(), list2.getHead());
+        SingleLinkedList.list(node);
 
     }
 }
@@ -214,6 +233,55 @@ class SingleLinkedList{
         head.next = reversedHead.next;
 
     }
+
+    //逆序打印链表 栈
+    public void reversePrint(HeroNode node){
+        if(node.next == null){
+            return;
+        }
+        //创建一个栈
+        Stack<HeroNode> stack = new Stack();
+        HeroNode cur = head.next;
+        //压栈
+        while(cur != null){
+            stack.push(cur);
+            cur = cur.next;
+        }
+        //出栈
+        while(stack.size() > 0){
+            System.out.println(stack.pop());
+        }
+    }
+
+    //合并两个有序链表
+    public static HeroNode combineList(HeroNode l1, HeroNode l2){
+        //创建一个新的头部
+        HeroNode newHead = new HeroNode(0, "","");
+        //头部不能动，借助temp
+        HeroNode temp = newHead;
+        l1 = l1.next;
+        l2 = l2.next;
+
+        while(l1 != null && l2 != null){
+            if (l1.no < l2.no){ //如果链表1的元素比链表2的元素小
+                temp.next = l1; //1加在temp后，也就是
+                l1 = l1.next;   //l1往后+位置
+            }else{
+                temp.next = l2;
+                l2 = l2.next;
+            }
+            temp = temp.next;
+        }
+        if(l1 != null){
+            temp.next = l1;
+        }
+        if(l2 != null){
+            temp.next = l2;
+        }
+
+        return newHead;
+    }
+
     //显示链表
     public void list(){
         if (head.next == null){
@@ -221,6 +289,22 @@ class SingleLinkedList{
             return;
         }
         HeroNode temp = head.next;
+        while(true){
+            if (temp == null) {
+                break;
+            }
+            System.out.println(temp);
+            temp = temp.next;
+        }
+    }
+
+    //显示链表
+    public static void list(HeroNode node){
+        if (node.next == null){
+            System.out.println("链表为空");
+            return;
+        }
+        HeroNode temp = node.next;
         while(true){
             if (temp == null) {
                 break;
