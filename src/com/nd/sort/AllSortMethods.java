@@ -2,6 +2,8 @@ package com.nd.sort;
 
 import java.util.Arrays;
 
+import static com.nd.sort.HeapSort.adjustHeap;
+
 /**
  * 总结所有排序算法(业务实现)
  *
@@ -17,7 +19,8 @@ public class AllSortMethods {
         //selectSort(arr);
         //quickSort(arr,0,arr.length-1);
         //mergeSort(arr,0,arr.length-1, new int[arr.length]);
-        redixsort(arr);
+        //redixsort(arr);
+        heapSort(arr);
         System.out.println("排序结果：" + Arrays.toString(arr));
     }
 
@@ -250,5 +253,54 @@ public class AllSortMethods {
                 bcounts[k] = 0;
             }
         }
+    }
+
+    /**
+     * @description: 堆排序调用方法，获取堆，后排序
+     * @param arr
+     * @return void
+     * @author: NANDI_GUO
+     * @date: 2022/11/25 12:51
+     */
+    public static void heapSort(int arr[]){
+        int temp = 0;
+        for (int i = arr.length/2 - 1; i >= 0; i--) {
+            getHeap(arr, i, arr.length);
+        }
+        for (int j = arr.length-1; j > 0; j--){
+            temp = arr[j];
+            arr[j] = arr[0];
+            arr[0] = temp;
+            adjustHeap(arr,0,j);
+        }
+    }
+
+    /**
+     * @description: 堆排序，变成大顶堆后，最大数沉底，进入循环
+     * @param arr 数组
+     * @param i 开始的节点，第一次初始化堆从1开始，后面是从0开始
+     * @param length 对多少元素进行调整，后面会不断减小，因为大的数沉在了最下面
+     * @return void
+     * @author: NANDI_GUO
+     * @date: 2022/11/25 12:35
+     */
+    private static void getHeap(int[] arr, int i, int length){
+        int temp = arr[i]; //最后一个非叶子节点
+        //比较当前节点的左右两个节点
+        for (int k = i * 2 + 1; k < length; k = k * 2 + 1){
+            //如果右节点比左节点大 将k指向右节点，如果没进判断就是k指向左子节点
+            if (k+1<length && arr[k] < arr[k+1]){
+                k++;
+            }
+            //比较子节点和当前节点
+            if (arr[k] > temp){
+                arr[i] = arr[k]; //将当前节点的值改为右子节点
+                i = k; //再将i指向之前的右子节点
+            } else {
+                break;
+            }
+            arr[i] = temp;
+        }
+
     }
 }
