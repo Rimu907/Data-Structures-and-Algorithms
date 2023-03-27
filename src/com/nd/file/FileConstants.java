@@ -7,5 +7,5 @@ package com.nd.file;
  * @date 2023/3/21 14:19
  */
 public class FileConstants {
-    public final static String PATH = "C:/Users/Caesar/Desktop/test/test.txt";
+    public final static String PATH = "C:/Users/Caesar/Desktop/test/nezuzu.txt";
 }

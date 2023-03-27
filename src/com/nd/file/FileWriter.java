@@ -16,13 +16,13 @@ import static com.nd.file.FileConstants.PATH;
  */
 public class FileWriter {
     public static void main(String[] args) {
-        String h = "byeWorld\n";
+        String h = "nezu love u\n";
         try {
             File file = new File(PATH);
-            FileOutputStream fileOutputStream = new FileOutputStream(file,true);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
             BufferedOutputStream bw = new BufferedOutputStream(fileOutputStream, 8);
             byte[] bytes = h.getBytes(StandardCharsets.UTF_8);
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 5; i++) {
                 bw.write(bytes);
             }
             bw.close();

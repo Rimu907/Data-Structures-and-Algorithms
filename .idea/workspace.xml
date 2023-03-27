@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d357566-fd51-4f92-b428-b3dcfd65bb6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nd/file/FileConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nd/file/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nd/file/FileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nd/thread/MultiSell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nd/thread/ThreadPoolSell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nd/thread/TicketSalesThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/com/nd/file/FileWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nd/file/FileConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nd/file/FileConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nd/file/FileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nd/file/FileWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,33 +70,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/资料/学习资料/数据结构与算法/代码/DataStructures/src/com/atguigu/stack/Calculator.java" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="Application.FileReader">
-    <configuration name="AVLTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.avl.AVLTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nd.avl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.binarysorttree.BinarySortTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nd.binarysorttree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MultiSell">
     <configuration name="FileReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.file.FileReader" />
       <module name="DataStructures" />
@@ -118,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HuffmanCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.huffmancode.HuffmanCode" />
+    <configuration name="MultiSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.thread.MultiSell" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nd.huffmancode.*" />
+          <option name="PATTERN" value="com.nd.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,13 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadPoolSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.thread.ThreadPoolSell" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketSalesThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicketSalesThreadPool" />
+      <module name="DataStructures" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileReader" />
+        <item itemvalue="Application.MultiSell" />
+        <item itemvalue="Application.ThreadPoolSell" />
+        <item itemvalue="Application.TicketSalesThreadPool" />
         <item itemvalue="Application.FileWriter" />
-        <item itemvalue="Application.AVLTreeDemo" />
-        <item itemvalue="Application.BinarySortTreeDemo" />
-        <item itemvalue="Application.HuffmanCode" />
+        <item itemvalue="Application.FileReader" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +191,10 @@
       <workItem from="1669875491441" duration="86000" />
       <workItem from="1679280839775" duration="1787000" />
       <workItem from="1679379448288" duration="2542000" />
+      <workItem from="1679408669491" duration="152000" />
+      <workItem from="1679408940013" duration="149000" />
+      <workItem from="1679905895058" duration="299000" />
+      <workItem from="1679906205383" duration="5410000" />
     </task>
     <servers />
   </component>
@@ -211,22 +214,50 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2049" height="259" key="GridCell.Tab.0.bottom" timestamp="1679382015824">
+    <state x="475" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1679906173595">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
+    <state x="475" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679906173595" />
+    <state x="783" y="190" key="#com.intellij.ide.util.MemberChooser" timestamp="1679908735146">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="783" y="190" key="#com.intellij.ide.util.MemberChooser/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679908735146" />
+    <state width="2049" height="281" key="GridCell.Tab.0.bottom" timestamp="1679910653989">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2049" height="281" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679910653989" />
     <state width="2049" height="259" key="GridCell.Tab.0.bottom/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="259" key="GridCell.Tab.0.center" timestamp="1679382015824">
+    <state width="2049" height="281" key="GridCell.Tab.0.center" timestamp="1679910653989">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
+    <state width="2049" height="281" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679910653989" />
     <state width="2049" height="259" key="GridCell.Tab.0.center/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="259" key="GridCell.Tab.0.left" timestamp="1679382015824">
+    <state width="2049" height="281" key="GridCell.Tab.0.left" timestamp="1679910653989">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
+    <state width="2049" height="281" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679910653989" />
     <state width="2049" height="259" key="GridCell.Tab.0.left/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="259" key="GridCell.Tab.0.right" timestamp="1679382015824">
+    <state width="2049" height="281" key="GridCell.Tab.0.right" timestamp="1679910653989">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
+    <state width="2049" height="281" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679910653989" />
     <state width="2049" height="259" key="GridCell.Tab.0.right/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
+    <state width="2049" height="311" key="GridCell.Tab.1.bottom" timestamp="1679909686456">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2049" height="311" key="GridCell.Tab.1.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679909686456" />
+    <state width="2049" height="311" key="GridCell.Tab.1.center" timestamp="1679909686456">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2049" height="311" key="GridCell.Tab.1.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679909686456" />
+    <state width="2049" height="311" key="GridCell.Tab.1.left" timestamp="1679909686456">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2049" height="311" key="GridCell.Tab.1.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679909686456" />
+    <state width="2049" height="311" key="GridCell.Tab.1.right" timestamp="1679909686456">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2049" height="311" key="GridCell.Tab.1.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679909686456" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
