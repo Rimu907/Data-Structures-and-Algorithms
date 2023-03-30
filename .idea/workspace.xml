@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d357566-fd51-4f92-b428-b3dcfd65bb6e" name="Default Changelist" comment="feat: 文件io流，多线程等">
-      <change afterPath="$PROJECT_DIR$/src/com/nd/sort/AllSortReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nd/sort/AllSorts0329.java" afterDir="false" />
+    <list default="true" id="5d357566-fd51-4f92-b428-b3dcfd65bb6e" name="Default Changelist" comment="feat: 8排序">
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/InsertSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/SelectSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,13 +67,13 @@
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/资料/学习资料/数据结构与算法/代码/DataStructures/src/com/atguigu/stack/Calculator.java" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.AllSorts0329">
-    <configuration name="AllSortReview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.sort.AllSortReview" />
+  <component name="RunManager" selected="Application.QuickSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.BubbleSort" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nd.sort.*" />
+          <option name="PATTERN" value="com.re.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllSorts0329" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.sort.AllSorts0329" />
+    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.InsertSort" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nd.sort.*" />
+          <option name="PATTERN" value="com.re.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.thread.MultiSell" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.QuickSort" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nd.thread.*" />
+          <option name="PATTERN" value="com.re.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.thread.ThreadPoolSell" />
+    <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.SelectSort" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nd.thread.*" />
+          <option name="PATTERN" value="com.re.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,20 +120,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketSalesThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TicketSalesThreadPool" />
+    <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.ShellSort" />
       <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.re.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AllSorts0329" />
-        <item itemvalue="Application.AllSortReview" />
-        <item itemvalue="Application.ThreadPoolSell" />
-        <item itemvalue="Application.MultiSell" />
-        <item itemvalue="Application.TicketSalesThreadPool" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.ShellSort" />
+        <item itemvalue="Application.SelectSort" />
+        <item itemvalue="Application.InsertSort" />
+        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +202,7 @@
       <workItem from="1679999454366" duration="1368000" />
       <workItem from="1680053179640" duration="777000" />
       <workItem from="1680059603732" duration="22722000" />
+      <workItem from="1680145930932" duration="8797000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 文件io流，多线程等">
       <created>1679912385820</created>
@@ -201,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679912385820</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 8排序">
+      <created>1680146006016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680146006016</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 文件io流，多线程等" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 文件io流，多线程等" />
+    <MESSAGE value="feat: 8排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 8排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="882" y="386" key="#Notifications" timestamp="1679912751686">
@@ -240,62 +258,62 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="854" y="458" key="Github.Dialog.Accounts.Choose/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679912763634" />
-    <state width="2049" height="281" key="GridCell.Tab.0.bottom" timestamp="1680094797949">
+    <state width="2049" height="281" key="GridCell.Tab.0.bottom" timestamp="1680154631627">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="281" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680094797949" />
+    <state width="2049" height="281" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680154631627" />
     <state width="2049" height="259" key="GridCell.Tab.0.bottom/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="281" key="GridCell.Tab.0.center" timestamp="1680094797949">
+    <state width="2049" height="281" key="GridCell.Tab.0.center" timestamp="1680154631627">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="281" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680094797949" />
+    <state width="2049" height="281" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680154631627" />
     <state width="2049" height="259" key="GridCell.Tab.0.center/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="281" key="GridCell.Tab.0.left" timestamp="1680094797949">
+    <state width="2049" height="281" key="GridCell.Tab.0.left" timestamp="1680154631627">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="281" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680094797949" />
+    <state width="2049" height="281" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680154631627" />
     <state width="2049" height="259" key="GridCell.Tab.0.left/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="281" key="GridCell.Tab.0.right" timestamp="1680094797949">
+    <state width="2049" height="281" key="GridCell.Tab.0.right" timestamp="1680154631627">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="281" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680094797949" />
+    <state width="2049" height="281" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680154631627" />
     <state width="2049" height="259" key="GridCell.Tab.0.right/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
-    <state width="2049" height="311" key="GridCell.Tab.1.bottom" timestamp="1679999281810">
+    <state width="2049" height="311" key="GridCell.Tab.1.bottom" timestamp="1680149934747">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="311" key="GridCell.Tab.1.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679999281810" />
-    <state width="2049" height="311" key="GridCell.Tab.1.center" timestamp="1679999281810">
+    <state width="2049" height="311" key="GridCell.Tab.1.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680149934747" />
+    <state width="2049" height="311" key="GridCell.Tab.1.center" timestamp="1680149934747">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="311" key="GridCell.Tab.1.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679999281810" />
-    <state width="2049" height="311" key="GridCell.Tab.1.left" timestamp="1679999281810">
+    <state width="2049" height="311" key="GridCell.Tab.1.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680149934747" />
+    <state width="2049" height="311" key="GridCell.Tab.1.left" timestamp="1680149934747">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="311" key="GridCell.Tab.1.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679999281810" />
-    <state width="2049" height="311" key="GridCell.Tab.1.right" timestamp="1679999281810">
+    <state width="2049" height="311" key="GridCell.Tab.1.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680149934747" />
+    <state width="2049" height="311" key="GridCell.Tab.1.right" timestamp="1680149934747">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="311" key="GridCell.Tab.1.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679999281810" />
+    <state width="2049" height="311" key="GridCell.Tab.1.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680149934747" />
     <state x="409" y="111" key="SettingsEditor" timestamp="1679972157616">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="409" y="111" key="SettingsEditor/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679972157616" />
-    <state x="517" y="205" key="Vcs.Push.Dialog.v2" timestamp="1679912755917">
+    <state x="517" y="205" key="Vcs.Push.Dialog.v2" timestamp="1680146007877">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="517" y="205" key="Vcs.Push.Dialog.v2/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679912755917" />
-    <state x="-1600" y="-398" width="928" height="793" maximized="true" key="dock-window-1" timestamp="1680084485889">
+    <state x="517" y="205" key="Vcs.Push.Dialog.v2/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680146007877" />
+    <state x="-1600" y="-398" width="928" height="793" maximized="true" key="dock-window-1" timestamp="1680146254456">
       <screen x="-1600" y="-403" width="914" height="1429" />
     </state>
-    <state x="-1600" y="-398" width="928" height="793" maximized="true" key="dock-window-1/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680084485889" />
+    <state x="-1600" y="-398" width="928" height="793" maximized="true" key="dock-window-1/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680146254456" />
     <state x="-1600" y="-98" width="928" height="793" maximized="true" key="dock-window-2" timestamp="1680083424964">
       <screen x="-1600" y="-403" width="914" height="1429" />
     </state>
     <state x="-1600" y="-98" width="928" height="793" maximized="true" key="dock-window-2/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680083424964" />
-    <state x="597" y="253" key="run.anything.popup" timestamp="1680068140872">
+    <state x="597" y="253" key="run.anything.popup" timestamp="1680154414653">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="597" y="253" key="run.anything.popup/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680068140872" />
+    <state x="597" y="253" key="run.anything.popup/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680154414653" />
     <state x="603" y="69" width="840" height="1034" key="search.everywhere.popup" timestamp="1680081486042">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
@@ -348,6 +366,11 @@
           <url>file://$PROJECT_DIR$/src/com/nd/tree/ThreadedBinaryTreeDemo.java</url>
           <line>29</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/re/sort/SelectSort.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
