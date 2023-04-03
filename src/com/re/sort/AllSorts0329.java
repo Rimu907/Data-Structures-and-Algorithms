@@ -1,4 +1,4 @@
-package com.nd.sort;
+package com.re.sort;
 
 import java.util.Arrays;
 
@@ -13,16 +13,16 @@ import static com.nd.sort.MergeSort.merge;
  */
 public class AllSorts0329 {
     public static void main(String[] args) {
-        int arr[] = {4, 6, 8, 5, 9};
+        int arr[] = {4, 6, 8, 5, 9, 10};
         int[] temp = new int[arr.length];
 //        heapSort(arr);
 //        redixSort(arr);
-//        mergeSort(arr, 0, arr.length - 1, temp);
+        mergeSort(arr, 0, arr.length - 1, temp);
 //        quickSort(arr, 0, arr.length - 1);
 //        shellSort(arr);
 //        insertSort(arr);
 //        selectSort(arr);
-        bubbleSort(arr);
+//        bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -127,7 +127,7 @@ public class AllSorts0329 {
         }
 
         pointer = 0;
-        while (left < right) {
+        while (left <= right) {
             arr[left++] = temp[pointer++];
         }
     }
