@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class AllSorts0404 {
     public static void main(String[] args) {
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        int[] temp = new int[arr.length];
+        int[] temp = new int[arr.length]; 
 //        bubbleSort(arr);
 //        selectSort(arr);
 //        shellSort(arr);
