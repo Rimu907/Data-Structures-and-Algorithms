@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d357566-fd51-4f92-b428-b3dcfd65bb6e" name="Default Changelist" comment="feat: 8排序">
+      <change afterPath="$PROJECT_DIR$/src/com/re/sort/AllSorts0405.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/re/sort/AllSorts0404.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/re/sort/AllSorts0404.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,20 +63,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/资料/学习资料/数据结构与算法/代码/DataStructures/src/com/atguigu/stack/Calculator.java" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.AllSorts0404">
-    <configuration name="AllSorts0331" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0331" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.re.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.AllSorts0405">
     <configuration name="AllSorts0402" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0402" />
       <module name="DataStructures" />
@@ -116,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AllSorts0405" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0405" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.re.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.re.sort.MergeSort" />
       <module name="DataStructures" />
@@ -131,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AllSorts0405" />
         <item itemvalue="Application.AllSorts0404" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.AllSorts0403" />
         <item itemvalue="Application.AllSorts0402" />
-        <item itemvalue="Application.AllSorts0331" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +204,7 @@
       <workItem from="1680419499432" duration="3832000" />
       <workItem from="1680491861510" duration="3968000" />
       <workItem from="1680585817717" duration="6515000" />
+      <workItem from="1680667282134" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 文件io流，多线程等">
       <created>1679912385820</created>
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680591092804</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 8排序">
+      <created>1680667451705</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680667451705</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,28 +288,28 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="854" y="458" key="Github.Dialog.Accounts.Choose/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679912763634" />
-    <state width="2062" height="172" key="GridCell.Tab.0.bottom" timestamp="1680596011278">
+    <state width="2049" height="169" key="GridCell.Tab.0.bottom" timestamp="1680668528106">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2062" height="172" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680596011278" />
+    <state width="2049" height="169" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
     <state width="2049" height="259" key="GridCell.Tab.0.bottom/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.bottom/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2062" height="172" key="GridCell.Tab.0.center" timestamp="1680596011278">
+    <state width="2049" height="169" key="GridCell.Tab.0.center" timestamp="1680668528106">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2062" height="172" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680596011278" />
+    <state width="2049" height="169" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
     <state width="2049" height="259" key="GridCell.Tab.0.center/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.center/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2062" height="172" key="GridCell.Tab.0.left" timestamp="1680596011278">
+    <state width="2049" height="169" key="GridCell.Tab.0.left" timestamp="1680668528106">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2062" height="172" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680596011278" />
+    <state width="2049" height="169" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
     <state width="2049" height="259" key="GridCell.Tab.0.left/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.left/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2062" height="172" key="GridCell.Tab.0.right" timestamp="1680596011278">
+    <state width="2049" height="169" key="GridCell.Tab.0.right" timestamp="1680668528106">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2062" height="172" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680596011278" />
+    <state width="2049" height="169" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
     <state width="2049" height="259" key="GridCell.Tab.0.right/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.right/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
     <state width="2049" height="311" key="GridCell.Tab.1.bottom" timestamp="1680443027744">
@@ -328,10 +336,10 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="409" y="111" key="SettingsEditor/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679972157616" />
-    <state x="517" y="205" key="Vcs.Push.Dialog.v2" timestamp="1680591094873">
+    <state x="517" y="205" key="Vcs.Push.Dialog.v2" timestamp="1680667459461">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="517" y="205" key="Vcs.Push.Dialog.v2/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680591094873" />
+    <state x="517" y="205" key="Vcs.Push.Dialog.v2/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680667459461" />
     <state x="-1600" y="-403" width="928" height="763" maximized="true" key="dock-window-1" timestamp="1680167182018">
       <screen x="-1600" y="-403" width="914" height="1429" />
     </state>
