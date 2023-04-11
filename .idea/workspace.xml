@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d357566-fd51-4f92-b428-b3dcfd65bb6e" name="Default Changelist" comment="feat: 8排序">
-      <change afterPath="$PROJECT_DIR$/src/com/re/sort/AllSorts0405.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nd/graph/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nd/recursion/RecursionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nd/recursion/RecursionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,33 +64,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/资料/学习资料/数据结构与算法/代码/DataStructures/src/com/atguigu/stack/Calculator.java" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.AllSorts0405">
-    <configuration name="AllSorts0402" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0402" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.re.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllSorts0403" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0403" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.re.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RecursionTest">
     <configuration name="AllSorts0404" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.re.sort.AllSorts0404" />
       <module name="DataStructures" />
@@ -116,6 +91,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.graph.Graph" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.re.sort.MergeSort" />
       <module name="DataStructures" />
@@ -129,13 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecursionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.recursion.RecursionTest" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RecursionTest" />
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.AllSorts0405" />
         <item itemvalue="Application.AllSorts0404" />
         <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.AllSorts0403" />
-        <item itemvalue="Application.AllSorts0402" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +206,9 @@
       <workItem from="1680491861510" duration="3968000" />
       <workItem from="1680585817717" duration="6515000" />
       <workItem from="1680667282134" duration="1438000" />
+      <workItem from="1681124102686" duration="746000" />
+      <workItem from="1681178003161" duration="3368000" />
+      <workItem from="1681184830858" duration="3439000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 文件io流，多线程等">
       <created>1679912385820</created>
@@ -288,28 +292,28 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="854" y="458" key="Github.Dialog.Accounts.Choose/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679912763634" />
-    <state width="2049" height="169" key="GridCell.Tab.0.bottom" timestamp="1680668528106">
+    <state width="2049" height="345" key="GridCell.Tab.0.bottom" timestamp="1681188435366">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="169" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
+    <state width="2049" height="345" key="GridCell.Tab.0.bottom/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1681188435366" />
     <state width="2049" height="259" key="GridCell.Tab.0.bottom/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.bottom/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2049" height="169" key="GridCell.Tab.0.center" timestamp="1680668528106">
+    <state width="2049" height="345" key="GridCell.Tab.0.center" timestamp="1681188435366">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="169" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
+    <state width="2049" height="345" key="GridCell.Tab.0.center/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1681188435366" />
     <state width="2049" height="259" key="GridCell.Tab.0.center/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.center/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2049" height="169" key="GridCell.Tab.0.left" timestamp="1680668528106">
+    <state width="2049" height="345" key="GridCell.Tab.0.left" timestamp="1681188435366">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="169" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
+    <state width="2049" height="345" key="GridCell.Tab.0.left/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1681188435366" />
     <state width="2049" height="259" key="GridCell.Tab.0.left/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.left/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
-    <state width="2049" height="169" key="GridCell.Tab.0.right" timestamp="1680668528106">
+    <state width="2049" height="345" key="GridCell.Tab.0.right" timestamp="1681188435366">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state width="2049" height="169" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1680668528106" />
+    <state width="2049" height="345" key="GridCell.Tab.0.right/-1600.-403.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1681188435366" />
     <state width="2049" height="259" key="GridCell.Tab.0.right/-1600.-556.914.1429/0.0.2048.1104@0.0.2048.1104" timestamp="1679382015824" />
     <state width="2049" height="172" key="GridCell.Tab.0.right/0.0.2048.1104@0.0.2048.1104" timestamp="1680422604711" />
     <state width="2049" height="311" key="GridCell.Tab.1.bottom" timestamp="1680443027744">
