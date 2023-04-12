@@ -1,4 +1,6 @@
-package com.re.sort;
+package com.resort;
+
+import com.nd.sort.Bubble;
 
 import java.util.Arrays;
 
@@ -6,39 +8,38 @@ import java.util.Arrays;
  * (业务实现)
  *
  * @author NANDI_GUO
- * @date 2023/3/31 10:19
+ * @date 2023/4/2 15:11
  */
-public class AllSorts0331 {
+public class AllSorts0402 {
     public static void main(String[] args) {
-        int arr[] = {4, 6, 8, 5, 9, 3, 1, 2, 7};
-        System.out.println(Arrays.toString(arr));
+        int[] arr = {3, 4, 1, 2, 6, 8, 7, 9, 0, 5};
         int[] temp = new int[arr.length];
+        System.out.println(Arrays.toString(arr));
 //        bubbleSort(arr);
 //        selectSort(arr);
 //        insertSort(arr);
-//        shellSort(arr);
+//        shellSorts(arr);
 //        quickSort(arr, 0, arr.length - 1);
 //        mergeSort(arr, 0, arr.length - 1, temp);
 //        redixSort(arr);
         heapSort(arr);
-        System.out.println("排序结果: " + Arrays.toString(arr));
+        System.out.println("排序后: " + Arrays.toString(arr));
     }
 
-    //大顶堆，换位置，大顶堆
     private static void heapSort(int[] arr) {
         int temp;
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
-            adjustHeap(arr, i, arr.length);
+            getHeap(arr, i, arr.length);
         }
         for (int j = arr.length - 1; j > 0; j--) {
             temp = arr[j];
             arr[j] = arr[0];
             arr[0] = temp;
-            adjustHeap(arr, 0, j);
+            getHeap(arr, 0, j);
         }
     }
 
-    private static void adjustHeap(int[] arr, int i, int length) {
+    private static void getHeap(int[] arr, int i, int length) {
         int head = arr[i];
         for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
             if (k + 1 < length && arr[k] < arr[k + 1]) {
@@ -55,6 +56,7 @@ public class AllSorts0331 {
     private static void redixSort(int[] arr) {
         int[][] buckets = new int[10][arr.length];
         int[] bcount = new int[10];
+
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -63,27 +65,24 @@ public class AllSorts0331 {
         }
         max = String.valueOf(max).length();
 
-        for (int i = 1; i < Math.pow(10, max); i++) {
+        for (int i = 1; i < Math.pow(10, max); i *= 10) {
             for (int j = 0; j < arr.length; j++) {
                 int num = arr[j] / i % 10;
                 buckets[num][bcount[num]] = arr[j];
                 bcount[num]++;
             }
-            //取
-            int index = 0;
+            int temp = 0;
             for (int j = 0; j < bcount.length; j++) {
                 if (bcount[j] != 0) {
                     for (int k = 0; k < bcount[j]; k++) {
-                        arr[index++] = buckets[j][k];
+                        arr[temp++] = buckets[j][k];
                     }
                 }
                 bcount[j] = 0;
             }
         }
-
     }
 
-    //递归分 回溯合
     private static void mergeSort(int[] arr, int left, int right, int[] temp) {
         if (left < right) {
             int mid = (left + right) / 2;
@@ -93,7 +92,6 @@ public class AllSorts0331 {
         }
     }
 
-    //{1,2,3}{4,5,6}
     private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
         int i = left;
         int j = mid + 1;
@@ -111,15 +109,17 @@ public class AllSorts0331 {
         while (j <= right) {
             temp[p++] = arr[j++];
         }
+
         for (int k = 0; k < p; k++) {
             arr[left + k] = temp[k];
         }
     }
 
     private static void quickSort(int[] arr, int left, int right) {
-        if (left >= right) {
+        if (left > right) {
             return;
         }
+
         int i = left;
         int j = right;
         int base = arr[left];
@@ -138,16 +138,17 @@ public class AllSorts0331 {
                 arr[j] = temp;
             }
         }
+
         arr[left] = arr[i];
         arr[i] = base;
 
-        quickSort(arr, left, i - 1);
         quickSort(arr, i + 1, right);
+        quickSort(arr, left, j - 1);
     }
 
-    private static void shellSort(int[] arr) {
+    private static void shellSorts(int[] arr) {
         for (int gap = arr.length / 2; gap > 0; gap /= 2) {
-            for (int i = gap; i < arr.length; i += gap) {
+            for (int i = gap; i < arr.length; i++) {
                 int insertVal = arr[i];
                 int sortedP = i - gap;
                 while (sortedP >= 0 && arr[sortedP] > insertVal) {
@@ -174,18 +175,17 @@ public class AllSorts0331 {
     private static void selectSort(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
+            int min = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[minIndex] > arr[j]) {
-                    minIndex = j;
+                if (arr[min] > arr[j]) {
+                    min = j;
                 }
             }
-            if (minIndex != i) {
-                temp = arr[i];
-                arr[i] = arr[minIndex];
-                arr[minIndex] = temp;
+            if (min != i) {
+                temp = arr[min];
+                arr[min] = arr[i];
+                arr[i] = temp;
             }
-
         }
     }
 
@@ -203,9 +203,8 @@ public class AllSorts0331 {
                 }
             }
             if (!flag) {
-                break;
+                return;
             }
         }
     }
-
 }

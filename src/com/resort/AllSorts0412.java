@@ -1,4 +1,4 @@
-package com.re.sort;
+package com.resort;
 
 import java.util.Arrays;
 
@@ -6,9 +6,9 @@ import java.util.Arrays;
  * (业务实现)
  *
  * @author NANDI_GUO
- * @date 2023/4/5 12:04
+ * @date 2023/4/12 15:11
  */
-public class AllSorts0405 {
+public class AllSorts0412 {
     public static void main(String[] args) {
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int[] temp = new int[arr.length];
@@ -17,37 +17,9 @@ public class AllSorts0405 {
 //        shellSort(arr);
 //        quickSort(arr, 0, arr.length - 1);
 //        mergeSort(arr, 0, arr.length - 1, temp);
-//        heapSort(arr);
-        redixSort(arr);
+//        redixSort(arr);
+        heapSort(arr);
         System.out.println(Arrays.toString(arr));
-    }
-
-    private static void redixSort(int[] arr) {
-        int[][] buckets = new int[10][arr.length];
-        int[] bcount = new int[10];
-        int max = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-        }
-        max = String.valueOf(max).length();
-        for (int i = 1; i < Math.pow(10, max); i *= 10) {
-            for (int j = 0; j < arr.length; j++) {
-                int num = arr[j] / i % 10;
-                buckets[num][bcount[num]] = arr[j];
-                bcount[num]++;
-            }
-            int p = 0;
-            for (int j = 0; j < bcount.length; j++) {
-                if (bcount[j] != 0){
-                    for (int k = 0; k < bcount[j]; k++) {
-                        arr[p++] = buckets[j][k];
-                    }
-                }
-                bcount[j] = 0;
-            }
-        }
     }
 
     private static void heapSort(int[] arr) {
@@ -65,15 +37,43 @@ public class AllSorts0405 {
 
     private static void getHeap(int[] arr, int i, int length) {
         int head = arr[i];
-        for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
-            if (k + 1 < length && arr[k] < arr[k + 1]) {
+        for (int k = i * 2 + 1; k < length; k++) {
+            if (k + 1 < length && arr[k] < arr[k+1]){
                 k++;
             }
-            if (arr[k] > head) {
+            if (arr[k] > head){
                 arr[i] = arr[k];
                 i = k;
             }
-            arr[i] = head;
+        }
+        arr[i] = head;
+    }
+
+    private static void redixSort(int[] arr) {
+        int[][] buckets = new int[10][arr.length];
+        int[] bc = new int[10];
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        max = String.valueOf(max).length();
+        for (int i = 1; i < Math.max(10, max); i *= 10) {
+            for (int j = 0; j < arr.length; j++) {
+                int num = arr[j] / i % 10;
+                buckets[num][bc[num]] = arr[j];
+                bc[num]++;
+            }
+            int p = 0;
+            for (int j = 0; j < bc.length; j++) {
+                if (bc[j] != 0) {
+                    for (int k = 0; k < bc[j]; k++) {
+                        arr[p++] = buckets[j][k];
+                    }
+                }
+                bc[j] = 0;
+            }
         }
     }
 
@@ -132,8 +132,8 @@ public class AllSorts0405 {
         arr[left] = arr[i];
         arr[i] = base;
 
-        quickSort(arr, left, i - 1);
         quickSort(arr, i + 1, right);
+        quickSort(arr, left, i - 1);
     }
 
     private static void shellSort(int[] arr) {
@@ -160,9 +160,9 @@ public class AllSorts0405 {
                 }
             }
             if (min != i) {
-                temp = arr[min];
-                arr[min] = arr[i];
-                arr[i] = temp;
+                temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
             }
         }
     }

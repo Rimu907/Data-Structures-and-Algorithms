@@ -1,4 +1,4 @@
-package com.re.sort;
+package com.resort;
 
 import java.util.Arrays;
 import java.util.Map;
